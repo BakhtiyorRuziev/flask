@@ -335,21 +335,6 @@ class Flask(_PackageBoundObject):
     #: .. versionadded:: 0.8
     session_interface = SecureCookieSessionInterface()
 
-    # TODO remove the next three attrs when Sphinx :inherited-members: works
-    # https://github.com/sphinx-doc/sphinx/issues/741
-
-    #: The name of the package or module that this app belongs to. Do not
-    #: change this once it is set by the constructor.
-    import_name = None
-
-    #: Location of the template files to be added to the template lookup.
-    #: ``None`` if templates should not be added.
-    template_folder = None
-
-    #: Absolute path to the package on the filesystem. Used to look up
-    #: resources contained in the package.
-    root_path = None
-
     def __init__(
         self,
         import_name,
